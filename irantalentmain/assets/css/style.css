@@ -20,7 +20,9 @@ body {
 header {
     width: 100%;
     height: 100px;
+    background: #fff;
     position: fixed;
+    z-index: 1;
 }
 
 header .header-top a img {
@@ -398,78 +400,588 @@ header .header .language span a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: red;
+    /* background: red; */
 }
 
 .slider-box {
-    width: 80%;
+    width: 70%;
     height: 200px;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    background: yellow;
+    /* background: yellow; */
 }
 
 .slider-box .slider {
     background: #fff;
-    width: 150px;
+    width: 120px;
     height: 100%;
     cursor: pointer;
 }
 
-.slider-box .chevron {
+.slide .chevron {
+    width: 50px;
+    height: 100%;
     font-size: 50px;
 }
 
-.slider-box .chevron a {
+.slide .chevron a {
     text-decoration: none;
-    color: #000;
+    color: #2b2b2b;
     position: relative;
-    top: 50%;
+    top: 40%;
     cursor: pointer;
 }
 
-.slider-box .chevron .prev {
-    left: 20px;
+.slide .chevron .prev {
+    width: 50px;
+    height: 100%;
+    left: 430px;
+    /* background: blue; */
+
 }
 
-.slider-box .chevron .next {
-    right: 20px;
+.slide .chevron .next {
+    width: 50px;
+    height: 100%;
+    right: 430px;
+    position: relative;
+    /* background: blue; */
+
 }
-.slider-box .slider .slider-img{
+
+.slider-box .slider .slider-img {
     text-align: center;
+    line-height: 104px;
+    width: 100%;
+    height: 104px;
+    /* background: #f41aa4; */
 
 }
-.slider-box .slider .slider-img img{
+
+.slider-box .slider .slider-img img {
     width: 100px;
-    height: 80%;
     object-fit: cover;
 }
+
+.slider-box .slider .details {
+    width: 100%;
+    height: 35%;
+    /* background: #136411; */
+}
+
 .slider-box .slider .name-company {
-text-align: center;
-color: #000;
-display: block;
-font-size: 16px;
-margin-bottom: 10px;
+    text-align: right;
+    color: #000;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
 
 }
+
 .slider-box .slider .jobs {
-text-align: right;
-display: block;
-color: #2b2b2b;
-font-size: 10px;
+    text-align: right;
+    display: block;
+    color: #2b2b2b;
+    font-size: 10px;
+}
+
+.slider-box {
+    /* display: none; */
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.employment {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+}
+
+.employment .employment-box {
+    width: 77%;
+    height: inherit;
+    /* background: yellow; */
+}
+
+.employment .employment-box .title {
+    text-align: center;
+    padding: 20px;
+}
+
+.employment .employment-box .title h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #151414;
+}
+
+.employment .employment-box .heading-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.employment .employment-box .heading-box .heading-filed {
+    text-align: right;
+    display: flex;
+    color: #1e2f8f;
+}
+
+hr {
+    position: relative;
+    width: 91%;
+    right: 52px;
+    margin-top: 10px;
+}
+
+.employment .employment-box .lists-jobs .lists {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 25px 25px 0 20px;
+    right: 51px;
+    /* background: blue; */
+}
+
+.employment .employment-box .lists-jobs .list {
+    width: 20%;
+    margin: 0 10px;
+    height: 595px;
+    /* background:#f41aa4; */
+}
+.employment .buttom-box{
+    text-align: center;
+}
+.employment button{
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    border: 1px solid #1e2f8f;
+    cursor: pointer;
+    outline: none;
+}
+
+.employment button:hover{
+    color: #fff;
+
+    background: #1e2f8f;
+}
+.employment .employment-box .lists-jobs .list a {
+    text-decoration: none;
+    font-size: 14px;
+    text-align: right;
+    color: #000;
+}
+.employment .employment-box .lists-jobs .list a:hover{
+    padding-right:3px ;
+    color:#1e2f8f ;
+}
+
+.employment .employment-box .lists-jobs .list p {
+    margin: 7px 0;
+}
+/* ////////////////////////////////////// */
+.most-search {
+    margin:150px 0 ;
+}
+.most-search .title{
+    margin-bottom:30px ;
+}
+.most-search .title h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #151414;
+    text-align: center;
+}
+.most-search .search-box{
+    text-align: center;
+}
+.most-search .search-box .sec {
+    margin: 30px 0;
+}
+
+.most-search .search-box .sec span {
+    background: #cccccc65;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 25px;
+}
+.most-search .search-box .sec a{
+    text-decoration: none;
+    color: #323131;
+    font-size: 14px;
+    font-weight: 500;
+}
+.most-search .search-box .sec span:hover{
+    background: #ede6e6 ;
+}
+/* /////////////////////////////////////////////////////////////// */
+.last-jobs {
+    width: 100%;
+    padding-bottom: 100px ;
+    padding-top:50px;
+    background: #fbfbfb;
+    text-align: center;
+}
+.last-jobs .jobs-field{
+    margin: 80px 0;
+}
+.last-jobs .jobs-field h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #151414;
+    margin-bottom: 30px;
+}
+.last-jobs .jobs-field select{
+    width:350px;
+    height: 45px;
+    border: 1px solid #ccc;
+    color: #797070;
+    padding: 10px;
+}
+.last-jobs .button-box button{
+    width: 190px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 40px;
+    background: #fff;
+    color: #1e2f8f;
+    border: 1px solid #1e2f8f;
+    outline: none;
+    cursor: pointer;
+}
+.last-jobs .button-box button:hover{
+    background: #1e2f8f;
+    color: #fff;
+}
+/* ////////////////////////////////////////////////////////////// */
+.example{
+    width: 100%;
+    height: 500px;
+    /* background: #136411; */
+}
+.example .fields{
+    display: flex;
+    justify-content: center;
+}
+.example .fields .option{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.example .fields .option .title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.example .fields .option .company{
+    display: flex;
+    margin-top: 10px;
+}
+.example .fields .option .company .name-company{
+    font-size: 13px;
+} 
+.example .fields .option .main-cm .location{
+    font-size: 14px;
+    color: #323131;
+}
+.example .option .company .img-box{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+.example .option .company .img-box img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+.example .fields .option  .details{
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.example .fields .option  .details .ex-right{
+    font-size: 12px;
+    color: #696666;
+}
+.example .fields .option  .details button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: #1e2f8f;
+    cursor: pointer;
+    outline: none;
+}
+.example .fields .option  .details button:hover{
+    opacity: 0.8;
+}
+/* /////////////////////////////////////////// */
+.question{
+    width: 100%;
+    height: 350px;
+    padding: 50px 100px;
+    background: #fff;
+}
+.question .title{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.question .title p{
+
+}
+.question .faq-item{
+    /* border-bottom: 1px solid #ddd; */
+    font-size: 14px;
+}
+.question .faq-question{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    cursor: pointer;
+    background: #cccccc65;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.question .faq-question a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+.question .faq-answer{
+    padding: 15px;
+    display: none;
+}
+/* ///////////////////////////////////////////// */
+.change-you{
+    width: 100%;
+    height: 600px;
+    /* background: red; */
+}
+.change-you .title{
+    margin-bottom: 52px;
+    text-align: center;
+}
+.change-you .title span{
+    font-size: 25px;
+    font-weight: 500px;
+    color: #151414;
+}
+.change-you .section-you{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.change-you .section-you img{
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.change-you .section-you .right-field{
+
+}
+.change-you .section-you .right-field .flex{
+    width: 300px;
+    height: 60px;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #cccccc65;
+}
+.change-you .section-you .right-field a{
+    text-decoration: none;
+    color: #151414;
+}
+.change-you .section-you .right-field .flex:hover{
+    opacity: 0.8;
+    color: #000;
+}
+.change-you .flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.change-you i{
+    color: #696666;
+}
+/* /////////////////////////////////////// */
+.dream-job{
+    width: 100%;
+    height: 350px;
+    background:#fafafa;
+}
+.dream-job .title{
+    margin-bottom: 52px;
+    text-align: center;
+}
+.dream-job .title p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #151414;
+}
+.dream-job .road-dream{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dream-job .road-dream .road{
+    width: 300px;
+}
+.dream-job .road-dream .road .img-box{
+    text-align: center;
+}
+.dream-job .road-dream .road .ti{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 17px;
+}
+.dream-job .road-dream .road .explain{
+    text-align: center;
+    font-size: 14px;
+}
+/* /////////////////////////////////////////////// */
+.site-explain{
+    width: 100%;
+    height: 300px;
+    padding: 100px;
+}
+.site-explain .title{
+    text-align: right;
+    margin: 20px 0;
+}
+.site-explain .title p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #151414;
+}
+.site-explain .explain{
+    font-size: 14px;
+}
+.site-explain .button-box{
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    
+   
+}
+.site-explain .button-box a{
+    text-decoration: none;
+    color: #1e2f8f;
+    cursor: ;
+}
+.site-explain .button-box button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #1e2f8f;
+}
+
+/* //////////////////////////////////////////////// */
+footer {
+    margin-top:70px;
+    width: 100%;
+    background:#cccccc65;
+    padding: 20px 0;
+}
+
+footer .footer-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 20px 250px;
+}
+
+footer .footer-main .logo .logoimg-footer img {
+    width: 135px;
+    height: 20px;
+    object-fit: fill;
+    margin-bottom: 25px;
+}
+footer .footer-main  .explanation li {
+    font-size:14px;
+    list-style-type: none;
+    color: #413c3c;
+}
+footer .footer-main .footerr .social-links {
+    margin-top: 20px;
+}
+
+footer .footer-main .footerr .social-links a {
+    margin: 0px 5px;
+    padding: 5px 5px 0px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background: #ccc;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+footer .footer-main .footerr .social-links a:hover {
+    background: #2766A9;
 }
 
 
+footer .footer-main .footerr h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer .footer-main .footer li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+footer .footer-main .footer a:hover{
+    padding-right: 5px;
+}
+footer .footer-main .footer li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #413c3c;
+}
+footer .footer-main .footer li a:hover{
+    color:#2766A9;
+    font-weight:500;
+}
+hr {
+    opacity: 0.7;
+    color: #000;
+}
+
+footer .footer-bottom .col {
+    padding: 15px 50px;
+    color: #575151;
+    font-size: 14px;
 
 
+}
+footer .img-box{
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
 
-
-
-
-
-
-/* background-image: url(/assets/css/images/homepage/new/home-page-back.png);
-background-size: cover;
-background-position: center 0;
-background-repeat: no-repeat; */
+footer .footer-bottom .col a {
+    color: #575151;
+    font-size: 14px;
+}
