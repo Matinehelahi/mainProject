@@ -42,8 +42,8 @@
                             </a>
                             <div class="nav-links">
                                 <ul class="hover-nav">
-                                    <li><a href="#">  هتل </a></li>
-                                    <li><a href="#" style="border-bottom:none ;">  ویلا و اقامتگاه </a></li>
+                                    <li><a href="#"> هتل </a></li>
+                                    <li><a href="#" style="border-bottom:none ;"> ویلا و اقامتگاه </a></li>
                                 </ul>
                             </div>
                         </li>
@@ -57,9 +57,9 @@
                             </a>
                             <div class="nav-links">
                                 <ul class="hover-nav">
-                                    <li><a href="#">  علی بابا پلاس </a></li>
-                                    <li><a href="#">  مجله علی باب </a></li>
-                                    <li><a href="#" style="border-bottom:none ;" > بیمه مسافرتی </a></li>
+                                    <li><a href="#"> علی بابا پلاس </a></li>
+                                    <li><a href="#"> مجله علی باب </a></li>
+                                    <li><a href="#" style="border-bottom:none ;"> بیمه مسافرتی </a></li>
                                 </ul>
                             </div>
                         </li>
@@ -108,7 +108,7 @@
                             <div class="icontab">
                                 <i class='bx bxs-plane-take-off'></i>
                                 <div class="title-tab"> پرواز خارجی</div>
-                                </div>
+                            </div>
                         </a>
                         <a href="#" class="nav-link">
                             <div class="icontab">
@@ -147,32 +147,62 @@
                     <div class="form-explain">
                         <div class="is-open">
                             <button class="way-btn">
-                                <span class="way-flight"> یک طرفه</span>
+                                <div class="way-flight"> یک طرفه</div>
                                 <div class="icon-head">
                                     <i class='bx bxs-chevron-down'></i>
+                                </div>
+                                <div class="nav-links">
+                                    <ul class="hover-nav">
+                                        <li><a href="#">  یکطرفه </a></li>
+                                        <li><a href="#" style="border-bottom:none ;">  رفت و برگشت </a></li>
+                                    </ul>
                                 </div>
                             </button>
                         </div>
                         <div class="form-item">
-                            <div class="city">
+                            <div class=" item city">
                                 <div class="a-input-group">
                                     <div class="a-input is-first">
-                                        <input type="text">
-                                        <label for=""> مبدا (شهر)</label>
+                                        <input type="text" class="input-field" id="user">
+                                        <label for="user" class="label"> مبدا (شهر)</label>
+                                    </div>
+                                    <div class="a-input is-last">
+                                        <input type="text" class="input-field" id="user">
+                                        <label for="user"class="label">مقصد (شهر)</label>
                                     </div>
                                     <div class="input-group-btn">
                                         <button>
                                             <i class='bx bx-transfer'></i>
                                         </button>
                                     </div>
-                                    <div class="a-input is -last">
+                                </div>
+                            </div>
+                            <div class=" item date">
+                                <div class="a-input-group">
+                                    <div class="a-input is-first">
                                         <input type="text">
-                                        <label for="">مقصد (شهر)</label>
+                                        <label for=""> تاریخ رفت</label>
+                                    </div>
+                                    <div class="a-input is-last">
+                                        <input type="text">
+                                        <label for=""> تاریخ برگشت 
+                                            <i class='bx bx-plus'></i>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
+                            <div class=" item passeger">
+                                    <div class="a-input is-first">
+                                        <input type="text">
+                                        <label for="">  مسافران </label>
+                                    </div>
+                            </div>
+                            <div class="item search">
+                                <div class="button-box">
+                                    <button> جستجو </button>      
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -180,14 +210,19 @@
                 <div class="service-box">
                     <h2>سایر خدمات علی بابا</h2>
                     <div class="service-items">
-                        <div class="items">
+                        <div class="items">  
                             <ul>
-                                <li><a href="#">
+                                <li> 
+                                    <a href="#">
                                         <div class="icon-item"><img
                                                 src="../mainpaje/assets/img/homepage/safarcard-3dc2c4c4.svg" alt="">
+                                                <div class="new"> 
+                                                    <p class="ooooo">جدید</p>
+                                                </div>  
                                         </div>
-                                        <p> سفرکارت (سازمانی)</p>
-                                    </a></li>
+                                        <p class="difrent"> سفرکارت (سازمانی)</p>
+                                    </a>
+                                </li>
                                 <li><a href="#">
                                         <div class="icon-item"><img
                                                 src="../mainpaje/assets/img/homepage/insurance-icon-bb51c425.svg"
@@ -273,10 +308,9 @@
                             <span class="title">پرسش های شما</span>
                         </div>
 
-
                         <div class="according-content">
 
-                            <div class="header-ac">
+                            <div class="header-according">
                                 <div class="head-t">
                                     <i class='bx bx-question-mark'></i>
                                     <span>چند روز قبل از پرواز ،بلیط هواپیما را بخریم؟</span>
@@ -284,21 +318,15 @@
                                 <i class='bx bxs-chevron-down'></i>
                             </div>
                             <p class="description">
-                                امکان رزرو بلیط هواپیما از ماه ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روز
-                                های
-                                نزدیک
-                                پرواز ارزان تر می شود . بنا براین در صورتی همه شرایطتان اجازه می دهد،رزرو آنلاین بلیط
-                                هواپیما
-                                را به
-                                روز های پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید،باید
-                                هرچه
-                                سریع تر
-                                رزرو بلیط هواپیما را انجام دهید.
+                                امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در
+                                روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو
+                                آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر
+                                نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.
                             </p>
                         </div>
                         <div class="according-content">
 
-                            <div class="header-ac">
+                            <div class="header-according">
                                 <div class="head-t">
                                     <i class='bx bx-question-mark'></i>
                                     <span> در هر پرواز، میزان بار مجاز چقدر است ؟</span>
@@ -306,61 +334,89 @@
                                 <i class='bx bxs-chevron-down'></i>
                             </div>
                             <p class="description">
-                                میزان مجاز بار به کلاس پرواز و کلاس نرخی بلیط بستگی دارد.هنگام خرید آنلاین بلیط هواپیما
-                                می
-                                توانید میزان بار مجاز را در اطلاعات بلیط ببینید.طبیعی است که اگر میزان بارتان بیش از حد
-                                مجاز
-                                باشد، باید جریمه پرداخت کنید.
+                                میزان مجاز بار به کلاس پرواز و کلاس نرخی بلیط بستگی دارد. هنگام خرید آنلاین بلیط هواپیما
+                                می‌توانید میزان بار مجاز را در اطلاعات بلیط ببینید. طبیعی است که اگر میزان بارتان بیش از
+                                حد مجاز باشد، باید جریمه پرداخت کنید.
                             </p>
                         </div>
                         <div class="according-content">
 
-                            <div class="header-ac">
+                            <div class="header-according">
                                 <div class="head-t">
                                     <i class='bx bx-question-mark'></i>
-                                    <span> آیا پس از خرید اینترنتی بلیط هواپیما امکان استرداد آن وجود دارد؟</span>
+                                    <span> نرخ بلیط هواپیما برای نوزادان و کودکان زیر ۱۲ سال چگونه است؟ </span>
                                 </div>
                                 <i class='bx bxs-chevron-down'></i>
                             </div>
                             <p class="description">
-                                وقتی از علی بابا یعنی بهترین سایت خرید بلیط هواپیما، بلیطتان را رزرو می کنید،خیالتان
-                                آسوده
-                                است که امکان استرداد وجه در صورت کنسل کردن بلیط وجود دارد. میزان جریمه را هنگام رزرو
-                                آنلان
-                                بلیط هواپیما در قسمت قوانین استرداد بخوانید. میزان جریمه به نوع بلیط، کلاس پروازی ،کلاس
-                                نرخی
-                                و ...بستگی دارد.
+                                نرخ بلیط کودکان و نوزادان به کلاس پرواز و کلاس نرخی بستگی دارد. به صورت کلی، قیمت بلیط
+                                مسافر کودک (2 الی 12 سال) معادل 50 الی 100 درصد بلیط بزرگسال، و قیمت بلیط مسافر نوزاد
+                                (تا دو سال) 10 درصد بلیط بزرگسال است. هنگام تهیه بلیط هواپیما به این نکته توجه داشته
+                                باشید.
                             </p>
                         </div>
                         <div class="according-content">
 
-                            <div class="header-ac">
+                            <div class="header-according">
                                 <div class="head-t">
                                     <i class='bx bx-question-mark'></i>
-                                    <span> آیا پس از خردی بلیط هواپیما،امکان تغییرنام یا نام خانوادگی وجود دارد؟</span>
+                                    <span> رزرو آنلاین بلیط هواپیما هزینه بیشتری از خرید حضوری دارد؟ </span>
                                 </div>
                                 <i class='bx bxs-chevron-down'></i>
                             </div>
                             <p class="description">
-                                در پروتز داخلی یا خارجی ،امکان تغییر نام ونام خانوادگی در بلیط سیستمس وجود ندارد. اما در
-                                بلیط چاتر،برخی از چاترکننده ها این تغییر را می پذیرند.
+                                خیر؛ زمانی که از یک سایت معتبر خرید بلیط هواپیما، اقدام به خرید می‌کنید، نه تنها هزینه
+                                بیشتری پرداخت نمی‌کنید، حتی ممکن است تخفیف هم بگیرید. ضمنا با خرید آنلاین بلیط هواپیما
+                                از پشتیبانی نیز برخودار هستید.
                             </p>
                         </div>
                         <div class="according-content">
 
-                            <div class="header-ac">
+                            <div class="header-according">
                                 <div class="head-t">
                                     <i class='bx bx-question-mark'></i>
-                                    <span> هنگامی که از سایت خردی بلیط هواپیما رزرو بلیط را انجام میرهید، امکان انتخاب
+                                    <span> آیا پس از خرید اینترنتی بلیط هواپیما امکان استرداد آن وجود دارد؟ </span>
+                                </div>
+                                <i class='bx bxs-chevron-down'></i>
+                            </div>
+                            <p class="description">
+                                وقتی از علی‌بابا یعنی بهترین سایت خرید بلیط هواپیما ، بلیطتان را رزرو می‌کنید، خیالتان
+                                آسوده است که امکان استرداد وجه در صورت کنسل کردن بلیط وجود دارد. میزان جریمه را هم هنگام
+                                رزرو آنلاین بلیط هواپیما در قسمت قوانین استرداد بخوانید. میزان جریمه به نوع بلیط، کلاس
+                                پروازی، کلاس نرخی و... بستگی دارد.
+                            </p>
+                        </div>
+                        <div class="according-content">
+
+                            <div class="header-according">
+                                <div class="head-t">
+                                    <i class='bx bx-question-mark'></i>
+                                    <span> آیا پس از خرید بلیط هواپیما، امکان تغییر نام یا نام خانوادگی وجود دارد؟
+                                    </span>
+                                </div>
+                                <i class='bx bxs-chevron-down'></i>
+                            </div>
+                            <p class="description">
+                                در پرواز داخلی یا خارجی، امکان تغییر نام و نام خانوادگی در بلیط سیستمی وجود ندارد. اما
+                                در
+                                بلیط چارتر، برخی از چارترکننده‌ها این تغییر را می‌پذیرند.
+                            </p>
+                        </div>
+                        <div class="according-content">
+
+                            <div class="header-according">
+                                <div class="head-t">
+                                    <i class='bx bx-question-mark'></i>
+                                    <span> هنگامی که از سایت خرید بلیط هواپیما رزرو بلیط را انجام می‌دهیم، امکان انتخاب
                                         صندلی
-                                        مورد نظرمان وجود دارد؟</span>
+                                        مورد نظرمان وجود دارد؟ </span>
                                 </div>
                                 <i class='bx bxs-chevron-down'></i>
                             </div>
                             <p class="description">
-                                خیر، هنگام رزرو بلیط هواپیما داخلی یا خارجی امکان انتخاب وجود ندارد. البته در زمان چک
-                                این
-                                انتخاب محدوده صندلی امکان پذیر است.
+                                خیر؛ هنگام رزرو بلیط هواپیما داخلی یا خارجی امکان انتخاب صندلی وجود ندارد. البته در زمان
+                                چک‌این
+                                انتخاب محدوده صندلی امکان‌پذیر است.
                             </p>
                         </div>
 
@@ -501,7 +557,8 @@
                             <p class="title"> رتبه یک سفر</p>
                             <p class="comment"> معتبر ترین عرضه کننده محصولات
                                 <br>
-                                 گردشگری در ایران</p>
+                                گردشگری در ایران
+                            </p>
                         </div>
                     </div>
                     <div class="top-items">
@@ -512,7 +569,8 @@
                             <p class="title"> همسفر یک سفر</p>
                             <p class="comment"> ارائه خدمات سفر (پرواز، قطار،
                                 <br>
-                                اتوبوس، هتل و تور)</p>
+                                اتوبوس، هتل و تور)
+                            </p>
                         </div>
                     </div>
                     <div class="top-items">
@@ -521,9 +579,10 @@
                         </div>
                         <div class="item">
                             <p class="title"> همسفر همه لحظات سفر</p>
-                            <p class="comment"> پشتیبانی و همراهی 24 ساعته در تمامی 
+                            <p class="comment"> پشتیبانی و همراهی 24 ساعته در تمامی
                                 <br>
-                                مراحل سفر</p>
+                                مراحل سفر
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -565,8 +624,10 @@
                             </div>
                             <div class="phone">
                                 تلفن پشتیبانی :
-                                <a href="#"> <p> 021-43900000</p></a>
-                                
+                                <a href="#">
+                                    <p> 021-43900000</p>
+                                </a>
+
                             </div>
                             <div class="address-co">
                                 دفتر پشتیبانی : اکباتان ، نبش اتوابن لشگری، کوی بیمه چهارم ، بن بست گل ها ، پلاک 1
@@ -636,6 +697,7 @@
             </div>
         </footer>
     </div>
+    <script src="../mainpaje/assets/js/script.js"></script>
 </body>
 
 </html>
