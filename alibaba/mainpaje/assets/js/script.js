@@ -90,49 +90,77 @@ cities.forEach((cit) => {
 
 ///////////////////////////////////////////////////////
 
-const adult_input=document.getElementById("adult_input");
-        function stepperAdult(btn){
-            let id = btn.getAttribute("id");
-            let min = adult_input.getAttribute("min");
-            let max = adult_input.getAttribute("max");
-            let step = adult_input.getAttribute("step");
-            let val = adult_input.getAttribute("value");
-            let calcstep = (id == "increment") ? (step*1):(step * -1);
-            let newValue = parseInt(val) + calcstep;
+const adult_input = document.getElementById("adult_input");
+function stepperAdult(btn) {
+    let id = btn.getAttribute("id");
+    let min = adult_input.getAttribute("min");
+    let max = adult_input.getAttribute("max");
+    let step = adult_input.getAttribute("step");
+    let val = adult_input.getAttribute("value");
+    let calcstep = (id == "increment") ? (step * 1) : (step * -1);
+    let newValue = parseInt(val) + calcstep;
 
-            if(newValue >= min && newValue <= max){
-                adult_input.setAttribute("value" , newValue);
-            }
-        };
+    if (newValue >= min && newValue <= max) {
+        adult_input.setAttribute("value", newValue);
+    }
+};
 
-        const child_input=document.getElementById("child_input");
-        function stepperChild(btn){
-            let id = btn.getAttribute("id");
-            let min = child_input.getAttribute("min");
-            let max = child_input.getAttribute("max");
-            let step = child_input.getAttribute("step");
-            let val = child_input.getAttribute("value");
-            let calcstep = (id == "increment") ? (step*1):(step * -1);
-            let newValue = parseInt(val) + calcstep;
+const child_input = document.getElementById("child_input");
+function stepperChild(btn) {
+    let id = btn.getAttribute("id");
+    let min = child_input.getAttribute("min");
+    let max = child_input.getAttribute("max");
+    let step = child_input.getAttribute("step");
+    let val = child_input.getAttribute("value");
+    let calcstep = (id == "increment") ? (step * 1) : (step * -1);
+    let newValue = parseInt(val) + calcstep;
 
-            if(newValue >= min && newValue <= max){
-                child_input.setAttribute("value" , newValue);
-            }
+    if (newValue >= min && newValue <= max) {
+        child_input.setAttribute("value", newValue);
+    }
 
-        }
-        const infant_input=document.getElementById("infant_input");
-        function stepperinfant(btn){
-            let id = btn.getAttribute("id");
-            let min = infant_input.getAttribute("min");
-            let max = infant_input.getAttribute("max");
-            let step = infant_input.getAttribute("step");
-            let val = infant_input.getAttribute("value");
-            let calcstep = (id == "increment") ? (step*1):(step * -1);
-            let newValue = parseInt(val) + calcstep;
+}
+const infant_input = document.getElementById("infant_input");
+function stepperinfant(btn) {
+    let id = btn.getAttribute("id");
+    let min = infant_input.getAttribute("min");
+    let max = infant_input.getAttribute("max");
+    let step = infant_input.getAttribute("step");
+    let val = infant_input.getAttribute("value");
+    let calcstep = (id == "increment") ? (step * 1) : (step * -1);
+    let newValue = parseInt(val) + calcstep;
 
-            if(newValue >= min && newValue <= max){
-                infant_input.setAttribute("value" , newValue);
-            }
+    if (newValue >= min && newValue <= max) {
+        infant_input.setAttribute("value", newValue);
+    }
 
-        }
-        
+}
+//slider
+var slides = document.querySelectorAll(".slide");
+
+var n = 0;
+
+function displayNone() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+}
+
+function noActive() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+}
+
+//time
+setInterval(function () {
+    n++;
+    if (n > slides.length - 1) {
+        n = 0;
+    }
+
+    displayNone();
+    noActive();
+    slides[n].style.display = 'block';
+    slides[n].classList.add('active');
+}, 3000);

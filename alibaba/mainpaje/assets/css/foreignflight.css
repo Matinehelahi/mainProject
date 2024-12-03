@@ -552,7 +552,96 @@ input:focus ~ .v-dropdown{
 .form-explain .search .button-box button:hover{
     background: #E3A107;
 }
+/* *****************list option******************* */
 
+.options_list {
+    position: absolute;
+    width: 445px;
+    top: 190px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0px;
+    max-height: 270px;
+    overflow-y: auto;
+}
+
+.option {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 15px;
+    transition: .1s ease-in-out;
+    border-bottom: 1px solid #ccc;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.option-box{
+    display: flex;
+    align-items: center;
+}
+.option .airplane{
+    display: flex;
+    align-items: center;
+
+}
+.option .cit{
+    color: #000;
+}
+.option .country{
+    font-size: 12px;
+    color: #000;
+}
+.option .airplane .caption{
+    font-size: 12px;
+    color: #949da7;
+    margin-right: 10px;
+}
+.options_list .optionBold {
+    background: #f8fafb;
+    height: 20px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #6c7680;
+    border: none;
+    align-items: center;
+    display: flex;
+}
+
+.options_list .icon {
+    color: #949da7;
+    padding-left: 10px;
+}
+
+.option:hover{
+    background-color: #45a7d81b;
+    cursor: pointer;
+}
+.lKA{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.options_list::-webkit-scrollbar {
+    width: 4px;
+    background-color: #420f0f;
+}
+
+.options_list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+.options_list.active {
+    display: block;
+}
+
+.options_list.active-end {
+    display: block;
+    right: 270px;
+}
 /* ///////////////////////////////////////////// */
 .service-alibaba {
     width: 100%;

@@ -847,7 +847,7 @@ footer .footer-bottom .social-links a {
     justify-content: center;
 }
 
-.start-tour .tour-content {
+.start-tour .section-content {
     width: 76%;
 }
 
@@ -897,7 +897,7 @@ footer .footer-bottom .social-links a {
     margin-left: 15px;
 }
 
-.start-tour .filed-left .buttons-slide .side {
+.start-tour .filed-left .buttons-slide .symbol {
     padding: 5px;
     border: 1px solid #cbd1d7;
     border-radius: 10px;
@@ -911,7 +911,58 @@ footer .footer-bottom .social-links a {
 .start-tour .links-tour a {
     font-size: 14px;
 }
+/* **************slider***************** */
+.wrapper-villa{
+    max-width: 1200px;
+    position: relative;
+}
+.wrapper-villa .carousel{
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
 
+}
+.carousel .image-card{
+    object-fit: cover;
+    margin-right: 14px;
+    width: calc(100%/4);
+}
+.carousel .image-card:first-child{
+    margin-right: 0px;
+}
+.wrapper-villa .prev{
+    left: -25px;
+}
+.wrapper-villa .next{
+    right: -25px;
+}
+ .namad{
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    list-style: none;
+    line-height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #bdc2c8;
+}
+@media screen and (max-width:900px){
+    .carousel img{  
+        width: calc(100% /3);
+    }
+}
+@media screen and (max-width:550px){
+    .carousel img{  
+        width: calc(100% /2);
+    }
+}
 /* **************************** */
 .part-card {
     width: 100%;
@@ -919,6 +970,7 @@ footer .footer-bottom .social-links a {
     margin: 40px 0;
     display: flex;
     justify-content: center;
+    
 }
 
 .part-card .block {
@@ -930,7 +982,7 @@ footer .footer-bottom .social-links a {
     justify-content: space-between;
 }
 
-.section-content {
+.part-card .image-card{
     width: 300px;
     min-height: 350px;
     border: 1px solid #d5d9dd;
@@ -953,11 +1005,11 @@ footer .footer-bottom .social-links a {
     border-radius: 6px 6px 0 0;
 }
 
-.section-content ..img-card__content h4 {
+.section-content .img-card__content h4 {
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 
 .section-content .img-card__content {
@@ -972,26 +1024,37 @@ footer .footer-bottom .social-links a {
 .section-content .img-card__content p {
     color: #636d76;
     font-size: 13px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     border-bottom: 2px solid #d5d9dd;
 }
 
-.section-content .one {
+.image-card .onefil {
     background-image: url('../img/tour/tourbox1/shfq-1.jpg');
 }
 
-.section-content .two {
+.image-card .two {
     background-image: url('../img/tour/tourbox1/michael_rivera_2.jpg');
 }
 
-.section-content .three {
+.image-card .three {
     background-image: url('../img/tour/tourbox1/India_Eligasht_3.jpg');
 }
 
-.section-content .four {
+.image-card .four {
     background-image: url('../img/tour/tourbox1/Flickr_festival_4.jpg');
 }
-
+.image-card .fivef {
+    background-image: url('../img/tour/tourbox1/5.jpg');
+}
+.image-card .sixf {
+    background-image: url('../img/tour/tourbox1/6.jpg');
+}
+.image-card .sevenf{
+    background-image: url('../img/tour/tourbox1/7.jpg');
+}
+.image-card .eightf{
+    background-image: url('../img/tour/tourbox1/8.jpg');
+}
 .section-content .img-card__content .price {
     display: flex;
     justify-content: space-between;
@@ -1128,6 +1191,7 @@ footer .footer-bottom .social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 /* /////////////////////////////////////////////// */

@@ -299,88 +299,167 @@ a:nth-child(7):hover~.animation {
     padding: 20px 30px;
 }
 
+.form-explain .is-open {
+    margin-right: 25px;
+
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.form-explain ul {
+    display: flex;
+}
+
+.form-explain .solid {
+    min-width: 100px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #c9d0d8;
+    border-radius: 21px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+    font-size: 14px;
+    color: #636d76;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-explain .solid:hover {
+    border: 2px solid #51A2E7;
+
+}
+
+.form-explain .solid p {
+    padding-right: 3px;
+}
+
+.form-explain .icon-head {
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+.form-explain .nav-links .hover-nav {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 8rem;
+    border: 1px solid #d6d8db;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-explain .nav-links .oneho {
+    top: 145px;
+    right: 70px;
+}
+
+.form-explain ul>li:hover .hover-nav {
+    display: block;
+}
+
+.form-explain .nav-links a {
+    display: flex;
+    background: #fff;
+    color: #636d76;
+    padding: .5rem .2rem;
+    font-size: 14px;
+}
+
+.form-explain .nav-links a:hover {
+    color: #0077DB;
+    background: #51a1e728;
+}
+
 /* ************ */
 .form-explain .form-item {
     width: 100%;
     height: 60px;
+    padding: 0px 30px;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-.form-explain .form-item .a-input-group {
-    display: flex;
-    height: 45px;
-    color: #4B5259;
-}
-
-.form-explain .form-item .city {
-    width: 500px;
-}
-
-.form-explain .form-item .date {
-    width: 350px;
-}
-.form-explain .form-item .search{
-    width: 250px;
 }
 
 .form-explain .form-item .item {
     margin-right: 10px;
+    display: flex;
+
 }
 
-.form-explain .city .a-input-group .is-first input {
-    border: none;
-    outline: none;
-    width: 250px;
+.form-explain .a-input {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+}
+
+.form-explain input {
     height: 45px;
     font-size: 14px;
+    color: #6C7680;
+    padding: 0 10px;
     background: transparent;
+    transition: 0.2s ease;
+    outline: none;
     border: 1px solid #BEC6CC;
+    line-height: 45px;
+}
+
+.form-explain .is-first input,
+.form-explain .is-calender-1 input {
+    width: 200px;
+    height: 45px;
     border-left: none;
     border-radius: 0 7px 7px 0;
-    position: relative;
 }
 
-.form-explain .city .a-input-group .is-last input {
-    border: none;
-    outline: none;
-    font-size: 14px;
-    background: transparent;
-    padding-inline: 20px 50px;
-    width: 250px;
+.form-explain .is-last input,
+.form-explain .is-calender-2 input {
+    width: 200px;
     height: 45px;
-    border: 1px solid #BEC6CC;
     border-radius: 7px 0 0 7px;
-    position: relative;
 }
 
-.form-explain .city .a-input-group .is-first label {
-    width: inherit;
-    display: flex;
-    justify-content: right;
+.form-explain .date .is-calender-1 input {
+    width: 150px;
+}
+
+.form-explain .date .is-calender-2 input {
+    width: 150px;
+}
+
+.form-explain .label {
     position: absolute;
-    top: 170px;
-    right:50px;
-    color: #a0a8af;
-    transition: .2s;
-
+    font-size: 14px;
+    color: #6c7680;
+    padding: 0 10px;
+    transition: 0.2s ease;
+    display: inline-block;
 }
 
-.form-explain .city .a-input-group .is-last label {
-    width: inherit;
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    top: 170px;
-    right: 310px;
-    color: #a0a8af;
-    transition: .2s;
-
+.form-explain .left {
+    padding-right: 20px;
 }
 
-.form-explain .a-input-group .input-group-btn button {
+input:focus {
+    border: 1px solid #212020;
+}
+
+input:focus+.label {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 2px;
+    background: #fff;
+    transform: translate(-15px, -16px);
+    z-index: 1111;
+    font-size: 12px;
+}
+
+.form-explain .input-group-btn button {
     border: 1px solid #BEC6CC;
     border-radius: 50%;
     background: #fff;
@@ -393,54 +472,42 @@ a:nth-child(7):hover~.animation {
     justify-content: center;
     color: #4B5259;
     z-index: 1;
-    right: 273px;
-}
-
-.form-explain .form-item .city .a-input-group .input-group-btn {
-    line-height: 3px;
-}
-
-/* ****************************** */
-
-.form-explain .date .a-input-group .is-arrow input {
-    border: none;
-    outline: none;
-    width: 320px;
-    height: 45px;
-    font-size: 14px;
-    background: transparent;
-    padding-inline: 10px 15px;
-    border: 1px solid #BEC6CC;
-    border-radius:  7px;
-    position: relative;
-}
-
-
-
-.form-explain .date .a-input-group .is-arrow label {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    border-radius:  7px;
-    padding-inline: 10px 15px;
-    position: absolute;
-    width: 320px;
-    height: 45px;
-    top: 160px;
-    right: 550px;
-    color: #a0a8af;
-    pointer-events: none;
-    transition: all 0.1s ease;
-    z-index: 200;
+    right: 255px;
+    cursor: pointer;
 }
 
 /* ************************** */
+.form-explain .passeger .a-input input {
+    outline: none;
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid #BEC6CC;
+    border-radius: 7px;
+}
+
+.form-explain .passeger .label {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 2px;
+    background: #fff;
+    transform: translate(-15px, -16px);
+    z-index: 1111;
+    font-size: 12px;
+}
+
+.form-explain .passeger input:valid {
+    color: #000;
+    font-size: 15px;
+}
+
+/* **************** */
 
 .form-explain .search .button-box button {
     border: none;
     outline: none;
     background: #FDB713;
-    width: 220px;
+    width: 160px;
     height: 45px;
     border-radius: 7px;
     font-size: 17px;
@@ -450,7 +517,235 @@ a:nth-child(7):hover~.animation {
 .form-explain .search .button-box button:hover {
     background: #E3A107;
 }
+/* *****************list option******************* */
 
+.options_list {
+    position: absolute;
+    width: 200px;
+    top: 190px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0px;
+    max-height: 270px;
+    overflow-y: auto;
+    
+}
+
+.option {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 15px;
+    transition: .1s ease-in-out;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.options_list .optionBold {
+    background: #f8fafb;
+    height: 20px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #6c7680;
+    border: none;
+    align-items: center;
+    display: flex;
+}
+
+.options_list .icon {
+    color: #949da7;
+    padding-left: 10px;
+}
+
+.option:hover{
+    background-color: #45a7d81b;
+    cursor: pointer;
+}
+
+.options_list::-webkit-scrollbar {
+    width: 4px;
+    background-color: #420f0f;
+}
+
+.options_list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+.options_list.active {
+    display: block;
+}
+
+.options_list.active-end {
+    display: block;
+    right: 270px;
+}
+/* ********************calendar******************** */
+.calendar-box.active {
+    display: block;
+}
+
+.calendar-box {
+    /* display: none; */
+    position: absolute;
+    top: 215px;
+    right: 50px;
+    width: 585px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.calendar-box .header-date {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px 10px 0 0px;
+}
+
+.calendar-box .header-date a {
+    text-decoration: none;
+    color: #0077db;
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+.calendar-box .header-date a:hover {
+    background-color: #0078db0a;
+    border: 1px solid #35a3fd63;
+}
+
+.calendar-box .middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.calendar-box .middle .month {
+    font-weight: 500;
+    margin: 0 100px;
+}
+
+.calendar-box .middle .chevron {
+    cursor: pointer;
+}
+
+.calendar-box .calendar {
+    display: flex;
+    padding: 0px 17px;
+    justify-content: space-between;
+}
+
+.calendar-box .calendar .calendar-right {
+    margin-left: 10px;
+}
+
+.calendar-box .calendar .calendar-left {
+    margin-right: 10px;
+}
+
+.calendar-box .calendar .weeks li {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 15px;
+    color: #afaaaa;
+}
+
+.calendar-box .calendar .days li {
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+    padding: 15px;
+}
+
+.calendar-box .days li.inactive {
+    color: #afaaaa;
+}
+
+.calendar-box .calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.calendar-box .calendar ul li {
+    width: calc(100% / 7);
+    position: relative;
+}
+
+.calendar-box .calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 38%;
+    z-index: -3;
+    border-radius: 5px;
+    background: transparent;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-box .days li.active::before {
+    border: 1px solid #ccc;
+}
+
+.calendar-box .days li:hover:before {
+    border: 1px solid #FDB713;
+}
+
+.calendar-box .footer-calendar {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+}
+
+.calendar-box .footer-calendar .comment-right {
+    display: flex;
+}
+
+.calendar-box .footer-calendar .comment-right .littel {
+    font-size: 14px;
+    margin-left: 8px;
+    color: #767575;
+}
+
+.calendar-box .footer-calendar .comment-right .big {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.calendar-box .footer-calendar .comment-left button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #0b7cd891;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.calendar-box .footer-calendar .comment-left button:hover {
+    background-color: #00569E;
+}
 /* ///////////////////////////////////////////// */
 .service-alibaba {
     width: 100%;
@@ -738,12 +1033,11 @@ a:nth-child(7):hover~.animation {
 /* /////////////////////////////////////////// */
 footer {
     width: 100%;
-    height: 600px;
+    height: 800px;
     margin: 10px 0 40px 0;
     display: flex;
     justify-content: center;
     border-top: 1px solid #BEC6CC;
-    /* background: red;  */
 }
 
 footer .footer {
@@ -789,7 +1083,7 @@ footer .footer-top .item .comment {
 /* ////////////////////////// */
 footer .footer-main {
     width: 100%;
-    height: 360px;
+    min-height: 370px;
     border-bottom: 1px solid #c9d0d8;
 }
 
@@ -929,6 +1223,9 @@ footer .footer-main .list-suggestion li::after {
 footer .footer-main .list-suggestion li:first-child::after {
     display: none;
 }
+.footer .footer-main .see{
+    display: none;
+}
 
 /* ///////////////////////////////////////////// */
 footer .footer-bottom {
@@ -959,7 +1256,6 @@ footer .footer-bottom .social-links a {
     padding: 8px;
     margin-left: 10px;
 }
-
 /* /////////////////////////////////////////////// */
 .part-card {
     width: 100%;
