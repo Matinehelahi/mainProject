@@ -297,90 +297,14 @@ a:nth-child(7):hover~.animation {
     width: 100%;
     height: 140px;
     padding: 20px 30px;
+    margin-top: 30px;
 }
-
-.form-explain .is-open {
-    margin-right: 25px;
-
-    width: 100%;
-    padding-bottom: 15px;
-}
-
-.form-explain ul {
-    display: flex;
-}
-
-.form-explain .solid {
-    min-width: 100px;
-    height: 35px;
-    background: #fff;
-    border: 1px solid #c9d0d8;
-    border-radius: 21px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-between;
-
-    padding: 5px;
-    font-size: 14px;
-    color: #636d76;
-    cursor: pointer;
-    position: relative;
-}
-
-.form-explain .solid:hover {
-    border: 2px solid #51A2E7;
-
-}
-
-.form-explain .solid p {
-    padding-right: 3px;
-}
-
-.form-explain .icon-head {
-    padding-right: 5px;
-    padding-top: 4px;
-}
-
-.form-explain .nav-links .hover-nav {
-    display: none;
-    position: absolute;
-    z-index: 5;
-    width: 8rem;
-    border: 1px solid #d6d8db;
-    background-color: #fff;
-    border-radius: 8px;
-    margin: 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.form-explain .nav-links .oneho {
-    top: 145px;
-    right: 70px;
-}
-
-.form-explain ul>li:hover .hover-nav {
-    display: block;
-}
-
-.form-explain .nav-links a {
-    display: flex;
-    background: #fff;
-    color: #636d76;
-    padding: .5rem .2rem;
-    font-size: 14px;
-}
-
-.form-explain .nav-links a:hover {
-    color: #0077DB;
-    background: #51a1e728;
-}
-
-/* ************ */
+/* ********************************************* */
 .form-explain .form-item {
     width: 100%;
     height: 60px;
     padding: 0px 30px;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
 }
 
@@ -409,27 +333,23 @@ a:nth-child(7):hover~.animation {
     line-height: 45px;
 }
 
-.form-explain .is-first input,
-.form-explain .is-calender-1 input {
-    width: 200px;
+.form-explain .is-first input
+ {
+    width: 250px;
     height: 45px;
     border-left: none;
     border-radius: 0 7px 7px 0;
 }
 
-.form-explain .is-last input,
-.form-explain .is-calender-2 input {
-    width: 200px;
+.form-explain .is-last input
+ {
+    width: 250px;
     height: 45px;
     border-radius: 7px 0 0 7px;
 }
-
-.form-explain .date .is-calender-1 input {
-    width: 150px;
-}
-
-.form-explain .date .is-calender-2 input {
-    width: 150px;
+.form-explain .is-calender-1 input{
+    border-radius: 7px;
+    width: 350px;
 }
 
 .form-explain .label {
@@ -472,37 +392,10 @@ input:focus+.label {
     justify-content: center;
     color: #4B5259;
     z-index: 1;
-    right: 255px;
+    right: 305px;
     cursor: pointer;
 }
-
-/* ************************** */
-.form-explain .passeger .a-input input {
-    outline: none;
-    width: 150px;
-    height: 45px;
-    font-size: 14px;
-    border: 1px solid #BEC6CC;
-    border-radius: 7px;
-}
-
-.form-explain .passeger .label {
-    height: 30px;
-    line-height: 30px;
-    padding: 0 2px;
-    background: #fff;
-    transform: translate(-15px, -16px);
-    z-index: 1111;
-    font-size: 12px;
-}
-
-.form-explain .passeger input:valid {
-    color: #000;
-    font-size: 15px;
-}
-
-/* **************** */
-
+/* ************ */
 .form-explain .search .button-box button {
     border: none;
     outline: none;
@@ -517,12 +410,13 @@ input:focus+.label {
 .form-explain .search .button-box button:hover {
     background: #E3A107;
 }
+
 /* *****************list option******************* */
 
 .options_list {
     position: absolute;
-    width: 200px;
-    top: 190px;
+    width: 250px;
+    top: 176px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -530,6 +424,7 @@ input:focus+.label {
     padding: 0px;
     max-height: 270px;
     overflow-y: auto;
+    display: none;
     
 }
 
@@ -590,10 +485,10 @@ input:focus+.label {
 }
 
 .calendar-box {
-    /* display: none; */
+    display: none;
     position: absolute;
-    top: 215px;
-    right: 50px;
+    top: 192px;
+    right: 345px;
     width: 585px;
     background: #fff;
     border-radius: 10px;

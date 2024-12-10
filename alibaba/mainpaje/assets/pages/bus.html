@@ -214,12 +214,12 @@
                         <div class="form-item">
                             <div class=" item city">
                                 <div class="a-input is-first">
-                                    <input type="text" class="input-field" id="user">
-                                    <label for="user" class="label"> مبدا (شهر ، پایانه)</label>
+                                    <input type="text" class="input-field_first" id="input1">
+                                    <label for="input1" class="label_first label"> مبدا (شهر ، پایانه)</label>
                                 </div>
                                 <div class="a-input is-last">
-                                    <input type="text" class="input-field" id="user">
-                                    <label for="user" class="label">مقصد (شهر ، پایانه)</label>
+                                    <input type="text" class="input-field" id="input2">
+                                    <label for="input2" class="label left label_last">مقصد (شهر ، پایانه)</label>
                                 </div>
                                 <div class="input-group-btn">
                                     <button type="button" disabled="" aria-label="swap">
@@ -229,7 +229,7 @@
                                             </path>
                                         </svg> </button>
                                 </div>
-                                <div class="options_list active">
+                                <div class="options_list">
                                     <div class="optionBold">پرتردد</div>
                                     <div class="option">
                                         <div class="icon">
@@ -313,14 +313,151 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" item date">
-                                <div class="a-input-group">
-                                    <div class="a-input is-arrow">
-                                        <input type="text" class="input3" id="input3">
-                                        <label for="input3"> تاریخ حرکت</label>
+                            <div class=" item date">        
+                                    <div class="a-input is-calender-1">
+                                        <input type="text"  class="input-field" id="input3">
+                                        <label for="input3" class="label"> تاریخ حرکت</label>
                                     </div>
-
-                                </div>
+                                    <div class="calendar-box">
+                                        <div class="header-date">
+                                            <div class="daily"><a href="#">برو به امروز</a></div>
+                                            <div class="calendar-milady"><a href="#">
+                                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                                                        class="align-middle">
+                                                        <path
+                                                            d="M15.75 3a.75.75 0 0 1 .75.75v.75h2.25c1.196 0 2.178.939 2.246 2.118L21 6.75v12a2.253 2.253 0 0 1-2.118 2.246L18.75 21H5.25a2.253 2.253 0 0 1-2.246-2.118L3 18.75v-12c0-1.196.939-2.178 2.118-2.246L5.25 4.5H7.5v-.75a.75.75 0 1 1 1.5 0v.75h6v-.75a.75.75 0 0 1 .75-.75Zm-3 12a.75.75 0 0 0-.745.662L12 15.75v.75a.75.75 0 0 0 1.495.088l.005-.088v-.75a.75.75 0 0 0-.75-.75Zm-3 0a.75.75 0 0 0-.745.662L9 15.75v.75a.75.75 0 0 0 1.495.088l.005-.088v-.75a.75.75 0 0 0-.75-.75Zm-3 0a.75.75 0 0 0-.745.662L6 15.75v.75a.75.75 0 0 0 1.495.088L7.5 16.5v-.75a.75.75 0 0 0-.75-.75Zm9-3.75a.75.75 0 0 0-.745.662L15 12v.75a.75.75 0 0 0 1.495.088l.005-.088V12a.75.75 0 0 0-.75-.75Zm-3 0a.75.75 0 0 0-.745.662L12 12v.75a.75.75 0 0 0 1.495.088l.005-.088V12a.75.75 0 0 0-.75-.75Zm-3 0a.75.75 0 0 0-.745.662L9 12v.75a.75.75 0 0 0 1.495.088l.005-.088V12a.75.75 0 0 0-.75-.75Zm-3 0a.75.75 0 0 0-.745.662L6 12v.75a.75.75 0 0 0 1.495.088l.005-.088V12a.75.75 0 0 0-.75-.75Zm12-5.25H16.5v.75a.75.75 0 1 1-1.5 0V6H9v.75a.75.75 0 1 1-1.5 0V6H5.25a.75.75 0 0 0-.745.663L4.5 6.75v1.5h15v-1.5a.75.75 0 0 0-.75-.75Z">
+                                                        </path>
+                                                    </svg>
+                                                    تقویم میلادی
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="middle">
+                                            <div class="chevron"><svg viewBox="0 0 24 24" width="0.875rem" height="0.875rem"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M7.302 21.266a.75.75 0 0 0 1.08 1.037l.066-.069 8.25-9.75a.75.75 0 0 0 .058-.89l-.058-.078-8.25-9.75a.75.75 0 0 0-1.202.893l.056.075L15.142 12l-7.84 9.266Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="month" style="margin-right: 20px;">آبان</div>
+                                            <div class="month">آذر</div>
+                                            <div class="chevron"><svg viewBox="0 0 24 24" width="0.875rem" height="0.875rem"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M16.698 21.266a.75.75 0 0 1-1.08 1.037l-.066-.069-8.25-9.75a.75.75 0 0 1-.058-.89l.058-.078 8.25-9.75a.75.75 0 0 1 1.202.893l-.056.075L8.858 12l7.84 9.266Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="calendar">
+                                            <div class="calendar-right">
+                                                <ul class="weeks first">
+                                                    <li>ش</li>
+                                                    <li>ی</li>
+                                                    <li>د</li>
+                                                    <li>س</li>
+                                                    <li>چ</li>
+                                                    <li>پ</li>
+                                                    <li>ج</li>
+                                                </ul>
+                                                <ul class="days">
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li class="inactive">1</li>
+                                                    <li class="inactive">2</li>
+                                                    <li class="inactive">3</li>
+                                                    <li class="inactive">4</li>
+                                                    <li class="inactive">5</li>
+                                                    <li class="inactive">6</li>
+                                                    <li class="inactive">7</li>
+                                                    <li class="inactive">8</li>
+                                                    <li class="inactive">9</li>
+                                                    <li class="inactive">10</li>
+                                                    <li class="inactive">11</li>
+                                                    <li class="active">12</li>
+                                                    <li>13</li>
+                                                    <li>14</li>
+                                                    <li>15</li>
+                                                    <li>16</li>
+                                                    <li>17</li>
+                                                    <li>18</li>
+                                                    <li>19</li>
+                                                    <li>20</li>
+                                                    <li>21</li>
+                                                    <li>22</li>
+                                                    <li>23</li>
+                                                    <li>24</li>
+                                                    <li>25</li>
+                                                    <li>26</li>
+                                                    <li>27</li>
+                                                    <li>28</li>
+                                                    <li>29</li>
+                                                    <li>30</li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="calendar-left">
+                                                <ul class="weeks last">
+                                                    <li>ش</li>
+                                                    <li>ی</li>
+                                                    <li>د</li>
+                                                    <li>س</li>
+                                                    <li>چ</li>
+                                                    <li>پ</li>
+                                                    <li>ج</li>
+                                                </ul>
+                                                <ul class="days">
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li>1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                    <li>4</li>
+                                                    <li>5</li>
+                                                    <li>6</li>
+                                                    <li>7</li>
+                                                    <li>8</li>
+                                                    <li>9</li>
+                                                    <li>10</li>
+                                                    <li>11</li>
+                                                    <li>12</li>
+                                                    <li>13</li>
+                                                    <li>14</li>
+                                                    <li>15</li>
+                                                    <li>16</li>
+                                                    <li>17</li>
+                                                    <li>18</li>
+                                                    <li>19</li>
+                                                    <li>20</li>
+                                                    <li>21</li>
+                                                    <li>22</li>
+                                                    <li>23</li>
+                                                    <li>24</li>
+                                                    <li>25</li>
+                                                    <li>26</li>
+                                                    <li>27</li>
+                                                    <li>28</li>
+                                                    <li>29</li>
+                                                    <li>30</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="footer-calendar">
+                                            <div class="comment-right">
+                                                <div class="littel">رفت</div>
+                                                <div class="big">انتخاب کنید</div>
+                                            </div>
+                                            <div class="comment-left">
+                                                <button>تایید</button>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
 
                             <div class="item search">
