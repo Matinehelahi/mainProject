@@ -2,55 +2,134 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Delabs Game</title>
-	<link rel="stylesheet" href="../delabs.gg/assets/css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <title></title>
 </head>
 
 <body>
-	<header class="header">
-		<section class="header-right">
-			<div class="navBar-menu">
-				<button class="btn-app">
-					<img src="../delabs.gg/assets/img/ico-btn-arrow.svg" alt=""> APP
-				</button>
-				<button class="ico-btn gitBook">
-					<img src="../delabs.gg/assets/img/ico-gitbook-grey.svg" alt="">
-				</button>
-				<button class="ico-btn substack">
-					<img src="../delabs.gg/assets/img/ico-substack-grey.svg" alt="">
-				</button>
-				<button class="ico-btn gitBook">
-					<img src="../delabs.gg/assets/img/ico-discord-grey.svg" alt="">
-				</button>
-				<button class="ico-btn gitBook">
-					<img src="../delabs.gg/assets/img/ico-twitter-grey.svg" alt="">
-				</button>
-				<button class="ico-btn gitBook">
-					<img src="../delabs.gg/assets/img/ico-telegram-grey.svg" alt="">
-				</button>
-			</div>
-		</section>
-		<section class="header-wrap">
-			<!-- <div class="header-inner">
-					<nav id="gnb" class="">
-						<ul class="gnb-list">
-							<li class="gnb-list-cell actived"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">HOME</span><span class="nav-bar"><span class="bar" style="width: 50%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">WE ARE DELABS GAMES</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">APㆍMETABOLTS</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">GAMEㆍROADMAP</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">PEOPLE</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">ADVISORS</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">BACKERS &amp; PARTNERS</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-							<li class="gnb-list-cell"><button type="button" class="btn-gnb-nav btn-menu-nav"><span class="nav-name">CONTACT US</span><span class="nav-bar"><span class="bar" style="width: 0%;"></span></span></button></li>
-						</ul>
-					</nav>
-				</div> -->
-		</section>
-	</header>
-	<section></section>
-	<script src="../delabs.gg/assets/js/script.js"></script>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            <img src="assets/img/logo-white-m.png" alt="image">
+         </a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#home" class="nav__link">HOME</a>
+               </li>
+               <li>
+                  <a href="#" class="nav__link">WE ARE DELABS GAMES</a>
+               </li>
+               <li>
+                  <a href="#" class="nav__link">AP . METABOLTS</a>
+               </li>
+               <li>
+                  <a href="#" class="nav__link">GAME . ROADMAP</a>
+               </li>
+               <li>
+                  <a href="#" class="nav__link">PEOPLE</a>
+               </li>
+			   <li>
+				<a href="#" class="nav__link">ADVISORS</a>
+			 </li>
+			 <li>
+				<a href="#" class="nav__link">BACKERS & PARTNERS</a>
+			 </li>
+			 <li>
+				<a href="#" class="nav__link">CONTACT US</a>
+			 </li>
+			 <li>
+				<button class="button__app"> APP <i class="ri-arrow-right-s-fill"></i></button>
+			</li>
+			<li>
+				<ul class="ico-links">
+					<li class="ico-link"><a href=""><img src="assets/img/ico-telegram-grey.svg" alt="telegram"></a></li>
+					<li class="ico-link"><a href=""><img src="assets/img/ico-twitter-grey.svg" alt="twitter"></a></li>
+					<li class="ico-link"><a href=""><img src="assets/img/ico-discord-grey.svg" alt="discord"></a></li>
+					<li class="ico-link"><a href=""><img src="assets/img/ico-substack-grey.svg" alt="substack"></a></li>
+					<li class="ico-link"><a href=""><img src="assets/img/ico-gitbook-grey.svg" alt="gitbook"></a></li>
+				</ul>
+			</li>
+            </ul>
+
+            <!-- close button -->
+
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+         </div>
+         <!-- toggle button -->
+
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+
+      </section>
+
+      <!--==================== RECIPE ====================-->
+      <section class="recipe section">
+
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src=""></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src=""></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/script.js"></script>
 </body>
 
 </html>
