@@ -78,3 +78,20 @@ window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration: 2500,
+    Delay:300,
+    //reset:true,//Animations repeat
+});
+
+sr.reveal(`.home__data, popular__container,.footer`);
+sr.reveal(`.home__board`,{Delay:700,distance:'100px',origin:'right'});
+sr.reveal(`.home__pizza`,{Delay:1400,distance:'100px',origin:'bottom',rotate:{z:-90}});
+sr.reveal(`.home__ingredient`,{Delay:2000,interval:100});
+sr.reveal(`.about__data ,.recipe__list, .contact__data`,{origin:'right'});
+sr.reveal(`.about__img,.recipe__img, .contact__image`,{origin:'left'});
+sr.reveal(`.Products__card`,{interval:100});
+
+

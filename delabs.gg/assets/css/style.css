@@ -11,7 +11,7 @@
     --first-color-alt: hsl(353, 93%, 46%);
     --first-color-dark: hsl(353, 50%, 15%);
     --title-color: hsl(355, 22%, 10%);
-    --nav-color:#cbcccb;
+    --nav-color: #cbcccb;
     --text-color: hsl(353, 16%, 32%);
     --text-color-light: hsl(353, 16%, 48%);
     --white-color: hsl(24, 86%, 90%);
@@ -92,8 +92,6 @@ h3,
 h4 {
     color: var(--title-color);
     font-weight: var(--font-regular);
-    font-family: var(--second-font);
-    line-height: 120%;
 }
 
 ul {
@@ -166,16 +164,17 @@ img {
     width: 200px;
 }
 
-.nav__toggle{
+.nav__toggle {
     display: flex;
     cursor: pointer;
     font-size: 1.2rem;
     color: var(--title-color);
-    border: 1px solid #646765 ;
+    border: 1px solid #646765;
     padding: 7px;
     border-radius: 50%;
     font-weight: 500;
 }
+
 .nav__close {
     display: flex;
     cursor: pointer;
@@ -186,7 +185,8 @@ img {
     border-radius: 50%;
     font-weight: 600;
 }
-.button__app{
+
+.button__app {
     width: 100%;
     margin: 20px 0px opx;
     background-color: var(--body-color);
@@ -200,17 +200,20 @@ img {
     cursor: pointer;
 
 }
-.button__app:hover{
+
+.button__app:hover {
     opacity: 0.8;
 }
 
-.ico-links{
+.ico-links {
     display: flex;
     justify-content: space-around;
 }
-.ico-link{
+
+.ico-link {
     cursor: pointer;
 }
+
 /* Navigation for mobile devices */
 @media screen and (max-width:1150px) {
     .nav__menu {
@@ -269,28 +272,188 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container {
+    padding-block: 7rem 3rem;
+    row-gap: 5rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
 
+.home__icon {
+    width: 80px;
+}
+
+.home__img {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+.home__ingredient {
+    row-gap: 4rem;
+}
+
+.home__title {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.home_images {
+    width: 26px;
+    height: 29px;
+    margin-right: 24px;
+}
+
+.home__button {}
+
+.button__join {
+    background-color: #383938;
+    color: #fff;
+    padding: 4px;
+    border-radius: 100px;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 152px;
+    height: 56px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px hsla(354, 7%, 29%, 0.4);
+    cursor: pointer;
+    transition: transition: transform 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.9s;
+    ;
+}
+
+.button__join:hover {
+    opacity: 0.8;
+}
+
+.home__scroll {}
+
+.home__scroll-icon {}
+
+.home__name {
+    font-family: "Work Sans";
+    color: #222;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
 /*=============== BUTTON ===============*/
+.button {
+    background-color: #383938;
+    color: #fff;
+    padding: 4px;
+    border-radius: 100px;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 152px;
+    height: 56px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px hsla(354, 7%, 29%, 0.4);
+    cursor: pointer;
+    transition: transition: transform 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.9s;
+    ;
+}
+
+/*=============== WE ARE DELABS GAME ===============*/
+.delabas__container {
+    padding-block: 7rem 3rem;
+    row-gap: 5rem;
+}
+
+.delabs__icon {}
+
+.delabs__image {}
+
+.delabs__data {
+    row-gap: 5rem;
+}
+
+.delabs__title {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #1a1717;
+}
+
+.delabs__name {
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #383938;
+}
+
+.delabs__description {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #646765;
+}
+
+.delabs__button {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 24px;
+    margin-top: 30px;
+}
+
+/*=============== AP . METABOLTS ===============*/
+.metaoltsAp__container {
+    padding-block: 7rem 3rem;
+    row-gap: 3rem;
+    padding:  90px 20px 50px;
+    background-color: #222;
+    border-radius: 2rem;
+}
+
+.metaoltsAp__img {
+    width: 60px;
+}
+
+.metaoltsAp__name {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: rgba(248, 248, 248, 0.8);
+}
+
+.metaoltsAp__description {
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #f8f8f8;
+}
+
+/*=============== GAME . ROADMAP===============*/
+.roadmap__container
+.roadmap__image
+.roadmap__video
+.roadmap__data
+.roadmap__title
+.roadmap__name
+.roadmap__description
+.roadmap__button
+/*=============== PEOPLE===============*/
 
 
-/*=============== ABOUT ===============*/
+/*=============== DEVISORS ===============*/
 
 
-/*=============== POPULAR ===============*/
+/*=============== BACKERS & PARTNERS===============*/
 
 
-/* Swiper class */
-
-
-
-/*=============== RECIPE ===============*/
-
-
-/*=============== PRODUCTS ===============*/
-
-
-/*=============== CONTACT ===============*/
+/*=============== CONTACT US ===============*/
 
 
 /*=============== FOOTER ===============*/
@@ -301,6 +464,7 @@ img {
 
 /*=============== SCROLL UP ===============*/
 
+/* Swiper class */
 
 /* Show Scroll Up */
 
